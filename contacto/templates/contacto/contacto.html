@@ -1,0 +1,34 @@
+<!--
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                                      //
+//                         Proyecto:	Sitio WEB para Tecnología QuickMatch C.A.                       // 
+//                         Fecha:		Septiembre de 2023                                              //
+//                         Autor:		Francisco Reyes ©                                               //
+//                         Archivo:		contacto.html para Contacto                                     //
+//																										//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="contenedorFormulario">
+
+    {% if "Válido" in request.GET %}
+
+        <p style="color: white";>Su Mensaje se ha Enviado Corectamente ¡Gracias por Visitarnos!</p>
+
+    {% endif %}
+    
+    <form action="" method="POST" style="text-align: center;">
+        {% csrf_token %}  <!-- Comprueba la implementación de la Clave de Token -->  
+        <table style="color: white; margin: 20px auto;">{{miFormulario.as_table}}</table>
+        <input type="submit" value="Enviar" style="width: 150px;">
+    </form>
+
+</div>
+
+{% endblock %}

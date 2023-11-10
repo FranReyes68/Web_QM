@@ -1,0 +1,594 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+/																                                     / 
+/                                   PRIMERA CLASE 12-11-2022                                         /
+/                                                                                                    /
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+									Instructor: José Cuicas
+                                       (0424) 413-70-75
+ALGORITMO:
+
+Conjunto ordenado de operaciones sistemáticas que permite hacer un cálculo y hallar la solución de un
+
+tipo de problema.
+
+
+CACTERÍSTICAS:
+
+1.- Finito.		4.- Definido
+2.- Ordenado.	5.- Legible.
+3.- Preciso.
+
+
+PARTES DE UN ALGORITMO:
+
+1.- Entradas	2.- Procesos	3.- Salidas.
+
+=====================================================================================================
+
+COMPONENTES DE UN PROGRAMA:
+
+- Variable: Reserva de Memoria RAM.
+
+			{ Números:	Enteros, Reales.
+- Tipos de Datos: { Textos:	String.
+			{ Lógicos:	Booleanos.
+
+- Entradas:	(Lee Datos).
+
+- Salida:	(Escribe en Pantalla o Imprime).
+
+*Nota: En Python los Datos de Texto siempre van entre Comillas simples o dobles.
+
+- Sentencias Condicionales: Es una Instrucción o Grupo de Instrucciones que se pueden ejecutar o no
+
+en función del valor de una condición. Entrega resultados Booleanos.
+                                          
+- Estructuras de Control en un Programa: { Condicionales
+                                         { Ciclos
+
+- Funciones: Bloques de Código identificados con un nombre.
+
+=====================================================================================================
+
+CARACTERÍSTICAS DE PYTHON:
+
+- Lenguaje de Alto Nivel (se asemeja al inglés).
+
+- Creado por Guido Van Rossum en 1.991.
+
+- Interpretado: Posee su Intérprete.
+
+- Portable.
+
+- Tipado Dinámico: No es necesario indicar el Tipo de Dato.
+
+=====================================================================================================
+
+IDE: Entorno de Desarrollo Integral
+
+I= Integral
+D= Developing
+E= Environment
+
+=====================================================================================================
+
+Sentencia def en Python.
+
+Se usa para Crear o Definir una función, las cuales a su vez permiten la creación de objetos. Todas
+
+ellas se escriben siempre en minúscula y al final de ellas se debe colocar paréntesis de apertura y
+
+cierre con dos puntos. Ejemplo: inicio():
+
+En Python a diferencia de "C" no existe la apertura y cierre de llaves.
+
+=====================================================================================================
+
+IDENTACIÓN:
+
+Este término significa mover un Bloque de Texto hacia la derecha, insertando espacios o tabuladores,
+
+a fin de separarlo del margen izquierdo y distinguirlo mejor.
+
+En Python, la identación puede realizarse usando la Tecla de Tabulación o dejando cuatro espacios
+
+en blanco. En un Programa, cuando se realiza la Identación con Tabulador, todas ellas se deben
+
+realizar de igual manera. El mismo caso aplica para los cuatro espacios. En un Programa no se debe
+
+identar con Tabulación y Cuatro Espacios, ya que puede generar Error de Compilación.
+
+Se debe elegir solo un método en cada Programación. 
+  
+=====================================================================================================
+
+                                           INSTANCIAR
+
+En Python, instanciar significa crear una Instancia de una Clase. En otras palabras, es el proceso de
+
+crear un Objeto a partir de una Clase. Para instanciar una Clase en Python, se debe llamar al Constructor
+
+de la Clase. El Constructor es un método especial que se llama automáticamente cuando se crea un Objeto
+
+de una Clase. El Constructor se define utilizando el método init().
+
+=====================================================================================================
+
+Sentencia end= ' '
+
+Esta Sentencia evita el salto de línea y muestra todo el contenido en una sola línea.
+
+=====================================================================================================
+
+OBJETOS:
+
+Un Objeto en Python es una única colección de Datos (Atributos) y Comportamiento (Métodos). Esto
+
+coincide con cualquier Tipo de Dato en Python. Un String, es una Colección de Datos (Caracteres) y
+
+comportamientos (upper(), lower(), etc.).
+
+- ATRIBUTOS: Son las características que describen un Objeto.
+
+- MÉTODOS: Son las acciones que realizan los Objetos.
+
+ En Python, el punto (.) permite acceder a los Atributos del Objeto.
+
+=====================================================================================================
+
+COMENTARIOS:
+
+En Python   =  Iniciando la línea, teclear: ALT + SHIFT + A
+
+En HTML     = Preferiblemente, escribir el comentario, seleccionarlo y luego: ALT + SHIFT + A
+
+
+=====================================================================================================
+
+PATRONES DE DISEÑO:
+
+- Responsabilidad Única.
+
+- No repetir Funciones.
+
+=====================================================================================================
+
+PASS:
+
+Es una palabra reservada de Python que se usa cuando por ejemplo, se crea una Función, pero no se
+
+sabe que código se va a colocar ene ella. Ejemplo:
+
+def main():
+	pass 
+
+=====================================================================================================
+
+CONDICIONAL USADA EN MÓDULOS (PROGRAMAS) DE PYTHON:
+
+if __name__ == '__main__':
+
+
+NOTA: Cuando una Variable comienza con doble guión bajo __ significa que es una Variable de Python.
+
+De igual manera sucede con las Funciones que comiencen con doble guión bajo, estas son Funciones pro-
+
+pias de Python, más no creadas por el usuario.
+
+Esta Condiocional es usada cuando se cuenta con una Programación que contenga dos o más Archivos.
+
+Cuando el Archivo en cuestión, cumpla con lo establecido en la condición "if" señalada anteriormente,
+
+significa que dicho Archivo es el Principal o Main.
+
+=====================================================================================================
+
+def main():
+	saludo = 'Hola'
+
+Lo anterior significa que la Variable saludo, se le asigna el String 'Hola', ya que los Textos siem-
+
+pre deben ir entre comillas simples o dobles.
+
+
+def main():
+	saludo = 'Hola'
+	print ('Bienvenido al Curso')
+	print (Saludo)
+
+En el ejemplo anterior, Saludo no lleva comillas porque cuando se ejecuta en la Terminal, debe mos-
+
+trar el valor de Saludo que en este caso es Hola.
+
+=====================================================================================================
+
+PLANTILLAS DE TEXTO:
+
+print('Hola %s %s' %(nombre, apellido))
+
+La sentencia anterior, imprimirá en pantalla lo almacenado en las Variables nombre y apellido.
+
+%s = Texto (String)
+%d = Decimal (Entero)
+%f = Float (Reales o con coma flotante).
++= = Operador de Acumulación.
+\t = Tabulación Horizontal (inserta 4 espacios en blanco).
+\n = Salto de Línea. Equivale a presionar "Enter".
+\r = Retorno de Carro. Lleva el cursor a la primera posición de la misma línea.
+\' = Agregar Comillas Simples a un String.
+\b = Lleva el cursor una posición hacia atrás.
+\n \t: Significa que 4 caracteres están en blanco mientras se envuelve.
+!= Operador Distinto: Sirve para indicar si dos o más valores son diferentes entre sí.
+
+print('Tu Edad es: %d y tu estaura es: %f' % (edad, estaura))
+
+La sentencia anterior, imprimirá en pantalla lo almacenado en las Variables edad y estatura, donde
+
+edad es una Variable de tipo Entero (%d) y estaura es de tipo Float (%f).
+
+Otra manera de expresar lo anterior, es usando esta Sintáxis:
+
+print('Tu Edad es: {} y tu estaura es: {:2f} .format(edad, estaura))
+
+En este caso, :2f significa que el valor de la variable estatura, es un Float que contendrá dos
+
+decimales.
+
+=====================================================================================================
+
+                              Instlación de la Extensión IPython
+
+
+1.- Abra una Ventana CMD Normal (No en modo Administrador).
+
+2.- Escriba: python.exe -m pip install --upgrade pip
+
+3.- Oprima "Enter" y espere que finalice la instalación.
+
+4.- Al finalizar, se observará el mensaje: "Successfully installed pip-23.0"
+
+=====================================================================================================
+
+ORDEN DE EVALUACIÓN EN LOS PROGRAMAS ó MÓDULOS:
+
+			1.- Paréntesis           3.- Multiplica y Divide
+			2.- Potencia y Raiz      4.- Suma y Resta
+
+=====================================================================================================
+
+UBICACIÓN DE LAS FUNCIONES:
+
+Las Funciones siempre deben ser definidas al inicio de cada Programa o Módulo. Las mismas siempre se
+
+ubican en la parte superior, ya que el intérprete lee los Programas o Módulos de Arriba hacia abajo
+
+y de izquierda a derecha.
+
+=====================================================================================================
+
+TIPOS DE DATOS:
+
+1.- SIMPLES (Primitivos):
+
+    - INT	→ Enteros.
+    - FLOAT	→ Reales o Flotantes.
+    - BOOL	→ Lógicos.
+
+
+2.- COMPUESTOS (Vectores / Matrices):
+
+    - TUPLAS	 → (Tuple) }
+    - LISTAS	 → (List)  }}      Estructuras de Datos Iterables
+    - DICCIONARIOS → (Dic)   }}      mediante Ciclos for, While.
+    - Conjuntos	 → (Set)   }
+
+
+ARRAY: Conjunto de Datos, mal llamado Arreglo.
+
+	TUPLAS:		Inmutables ()
+	LISTAS:		Mutables []
+	DICCIONARIOS:	Mutables.
+
+Lo que define a una Tupla, son las comas (,). Ejemplo:
+
+	edades = (21, 15, 19, 17, 26. 23)
+		     0   1   2   3   4   5  ← índices
+
+Lo que define a una Lista, son los corchetes [].
+
+
+=====================================================================================================
+
+ITERAR: Acción de recorrer todos los Datos que se encuentran en un Ciclo.
+
+
+ITERADOR:
+
+Un iterador es un objeto que permite a un Programador recorrer un contenedor, como podría ser una
+
+Lista. Sin embargo, los iteradores recorren el contenedor y proveen acceso a los elementos del mismo,
+
+pero no realizan la iteración propiamente dicha.
+
+
+
+GENERADOR:
+
+Los Generadores son en realidad Iteradores, pero sólo permiten ser iterados una vez. Esto se debe a
+
+que no almacenan todos los valores en Memoria, sino que los van generando al momento. Pueden ser
+
+usados de dos formas diferentes: iterándolos con un bucle for o pasándolos a una función.
+
+Generador:	Range = (0, 20)
+
+
+=====================================================================================================
+
+OPERADOR DE MÓDULO (%)
+
+Retorna el remanente de la División del Operando Izquierdo por el Operando Derecho. Se usa para
+
+obtener el Residuo de una división. El Operador de Módulo es considerado una operación aritmética
+
+al igual que los operadores + , - , / , * , **
+
+Si es 0, el Residuo es Par.
+Si es 1, el Residuo es Impar.
+                                    2 L2                 3 L2
+                         Residuo →  0  1      Residuo →  1  1 
+
+
+=====================================================================================================
+
+                              PROGRAMACIÓN ORIENTADA A OBJETOS (POO)
+
+CLASE:
+
+Una Clase (Class) es una Plantilla que permite la creación de un Objeto; es decir, una clase es un
+
+Tipo de Dato Definido por el Usuario y el crear Instancias de una Clase, hace relación a la creación
+
+de Objetos de ese tipo. Las Clases y los Objetos son considerados los principales bloques de
+
+desarrollo para Python, el cual es un Lenguaje de Programación orientado a Objetos.
+
+                                             GENERAR
+                                     CLASS  ---------→  Objet
+                                       ↑    INSTANCIAR
+                                       │
+                                    Definir: Atributos
+                                             Métodos
+
+Los nombres de las Clases deben iniciar siempre en Mayúscula. Toda Clase debe tener un método
+
+especial llamado Constructor.
+
+La expresión "def" también es usada para la creación de Métodos Constructores en las Clases.
+
+
+=====================================================================================================
+
+                                CÓMO CREAR UN PROYECTO EN DJANGO:
+
+Terminal - CMD ó Power Shell
+
+django-admin startproject Nombre del Proyecto
+
+=====================================================================================================
+
+                     CÓMO CREAR UNA APLICACIÓN DENTRO DE UN PROYECTO EN DJANGO:
+
+python manage.py startapp Nombre de la Aplicación.
+
+=====================================================================================================
+
+                    CÓMO CREAR UN SÚPER USUARIO EN EL ADMINISTRADOR DE DJANGO:
+
+python manage.py createsuperuser
+
+=====================================================================================================
+
+                                          MIGRACIONES:
+
+En Django, las Migraciones se aplican cuando se desea actualizar la estructura de la Base de Datos y
+mantener la integridad de los Datos.
+
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+
+El comando python manage.py makemigrations se emplea para crear Migraciones una vez que se realicen
+cambios en los Archivos denominados "models" pertenecientes a la Base de Datos. Luego de ralizar estas
+migraciones, las mismas deben ser aplicadas a la Base de Datos mediante el comando:
+" python manage.py migrate ".
+En resumen, cuando se requiera hacer una Migración, primero se debe aplicar el comando
+"python manage.py makemigrations" y luego, "python manage.py migrate"
+
+=====================================================================================================
+
+                         CÓMO INICIAR EL SERVIDOR HTTP DE DJANGO:
+
+Teclee el Comando: " python manage.py runserver "
+
+=====================================================================================================
+                 CÓMO REINICIAR EL SERVIDOR HTTP DE DJANGO DESDE LA CONSOLA:
+
+Teclee: " Ctrl + c "
+
+=====================================================================================================
+
+Django ORM
+
+Object Relation Mapping
+
+=====================================================================================================
+
+                       CÓMO INICIAR LA CONSOLA INTERACTIVA DE PYTHON:
+
+Teclle el Comando: " python manage.py shell "
+
+=====================================================================================================
+
+                                        BOOTSTRAP:
+
+Es un Framework CSS creado por Twiter en el 2011, el cual permite dar Formato a un sitio Web,
+utilizando Librerías CCS.
+Bootsrtap permite crear sitios Web tipo "response". Response en Bootstrap, es una característica
+que permite adaptar el Diseño de una Página Web a diferentes tamaños de Pantalla y Dispositivos.
+Con response, se puede usar una sola base de código para crear Páginas Web que se vean bien en
+Computadoras de Escritorio, Tablets, Celulares y otros dispositivos. Response se basa en el uso de
+rejillas flexibles, imágenes fluidas y consultas de medios CSS.
+Es totalmente compatible con los Navegadores Chrome, Firefox, Safari, Edge y Ópera.
+=====================================================================================================
+
+                                     GENERADOR DE REPORTES:
+
+1.- Crear Reporte HTML y CSS. Librerías, Convierte HTML y CSS a PDF.
+
+2.- Usar ReportLab
+
+3.- Usar ReportBRO
+
+CRUD = Create - Read - Update - Delete
+
+=====================================================================================================
+
+                 CÓMO VISUALIZAR LAS LIBRERÍAS Ó MÓDULOS INSTALADOS EN PYTHON:
+
+Teclle el Comando: " pip freeze " o también puede hacerlo con: " pip list "
+
+=====================================================================================================
+
+      CÓMO CREAR UN ARCHIVO "TXT" QUE CONTENGA LOS MÓDULOS O LIBRERÍAS INSTALADAS EN PYTHON:
+
+Desde la Consola, ubíquese en la Carpeta del Proyecto y teclee: " pip freeze >requirements.txt "
+
+=====================================================================================================
+
+Versión de Django empleada en el Proyecto: 2.2.3
+
+=====================================================================================================
+
+                                     ENTORNO VIRTUAL
+
+Para abrir un Terminal que se ubique en el Directorio con el que se está trabajando, oprima:
+
+Ctrl + Shift + P
+
+Al desplegarse la vía rápida, escriba la palabra "crear" y luego seleccione la opción:
+
+Terminal: " Crear un nuevo terminal integrado comenzando en un directorio "
+
+----------------------------------------------------------------------------------------------------
+                               
+                          INSTALACIÓN DEL ENTORNO VIRTUAL EN LA PC
+
+Para instalar un Entorno Virtual en la PC, en la Consola o Terminal, preferiblemente ubíquese
+
+en la Carpeta de su Proyecto y una vez allí, teclee: " pip install pipenv " y oprima "Enter".  
+
+----------------------------------------------------------------------------------------------------
+                         
+                           CREANDO ENTORNO VIRTUAL EN UN PROYECTO:
+
+En la Terminal, estando ubicado en el Proyecto a trabajar, escriba la Sentencia:
+
+" pipenv shell " y luego oprima "Enter". Esto creará el Entorno Virtual del Proyecto en ejecución.
+
+Una vez finalizado el proceso, notará que se crea un Archivo llamado "Pipfile" dentro del Proyecto
+
+con el cual se está trabajando.
+
+----------------------------------------------------------------------------------------------------
+            
+            INSTALANDO MÓDULOS O LIBRERÍAS "PIP" EN EL ENTORNO VIRTUAL DEL PROYECTO:
+
+En la Consola o Terminal, estando en la Carpeta del Proyecto y teniendo activado el Entorno Virual,
+
+teclee: " pipenv install nombre de la Librería ". Por ejemplo, si desea instalar en su Proyecto la
+
+Librería "Colorama", escriba: " pipenv install colorama " y luego oprima "Enter".
+
+Realizado lo anterior, notará que en el Archivo "Pipfile" de su Proyecto, especificamente en la
+
+sección "[Packages]" aparecerá la Librería instalada: colorama = "*" donde el asterisco indica
+
+que se ha instalado la última versión de dicha Librería o Módulo.
+
+A su vez, en el Archivo "Pipfile", existe una sección denominada "[dev-packages]" en la cual se
+
+pueden instalar los módulos o Librerías para cuando el proyecto se encuentre en Desarrollo.
+
+Recuerde que al instalar los Módulos o Librerías en la sección "[Packages]", los mismos estarán
+
+disponibles tanto para la modalidad "Desarrollo" del Proyecto, así como "Producción".
+
+----------------------------------------------------------------------------------------------------
+       
+       CÓMO INSTALAR MÓDULOS O LIBRERÍAS SOLO PARA LA MODALIDAD DESARROLLO EN SU PROYECTO:
+
+Teclee el Comando: "pipenv install nombre de la Librería --dev"
+
+----------------------------------------------------------------------------------------------------
+        
+        CÓMO DESINSTALAR MÓDULOS O LIBRERÍAS "PIP" EN EL ENTORNO VIRTUAL DEL PROYECTO:
+
+En la Consola o Terminal, estando en la Carpeta del Proyecto y teniendo activado el Entorno Virual,
+
+teclee: "pipenv uninstall nombre de la Librería".
+
+----------------------------------------------------------------------------------------------------
+     
+     CÓMO VISUALIZAR LAS LIBRERÍAS O MÓDULOS INSTALADOS EN EL ENTORNO VIRTUAL DE SU PROYECTO:
+
+Ubíquese en la Carpeta de su Proyecto y estando Activo el Entorno Virtual, teclee: "pip list"
+
+----------------------------------------------------------------------------------------------------
+                  
+                  CÓMO INGRESAR Ó ACTIVAR EL ENTORNO VIRTUAL DE UN PROYECTO:
+
+Ubíquese en la Carpeta de su Proyecto y una vez allí , teclee: "pipenv shell"
+
+----------------------------------------------------------------------------------------------------
+                             
+                             CÓMO SALIR DE UN ENTORNO VIRTUAL:
+
+Ubíquese en la Carpeta deL Proyecto que contiene el Entorno Virtual. Estando activo el Entorno,
+
+teclee: "exit"
+
+----------------------------------------------------------------------------------------------------
+                             
+                             CÓMO ELIMINAR UN ENTORNO VIRTUAL:
+
+Ubíquese en la Carpeta deL Proyecto que contiene el Entorno Virtual y una vez allí , teclee:
+
+" pipenv --rm "
+
+----------------------------------------------------------------------------------------------------
+                           
+                           RUTA DE UBICACIÓN DE ENTORNOS VIRTUALES:
+
+C:\Users\reyes\.virtualenvs
+
+----------------------------------------------------------------------------------------------------
+               
+               CÓMO INSTALAR UN MÓDULO O LIBRERÍA DESDE EL ARCHIVO "requirements.txt"
+
+El Archivo "requirements.txt" contiene las Librerías necesarias que conforman el Proyecto con el cual
+
+se está trabajando. Para generar dicho Archivo en el Proyecto, tecleee (incluyendo las comillas):
+
+pip freeze > "requirements.txt"
+
+Realizado lo anterior, puede instalar en el Entorno Virtual de su Proyecto, las Librerías contenidas
+
+en el Archivo generado, tecleando el Comando:
+
+pipenv install -r requirements.txt
+
+----------------------------------------------------------------------------------------------------
